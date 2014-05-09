@@ -1,0 +1,55 @@
+// _base.scss
+// ==============
+body {
+  background: lighten($beige, 10%);
+  font-family: $bodyFont;
+  font-size: 1.1em;
+}
+ 
+#content {
+  color: $pink;
+  font-size: 2em;
+}
+ 
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+ 
+#{headings()} {
+  font-family: $headFont;
+  font-size: 3em;
+}
+ 
+h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: $green;
+ 
+  @media (max-width: 700px) {
+    font-size: 2.2em;
+  }
+}
+ 
+h2 {
+  font-size: 1.5em;
+  color: $purple;
+}
+ 
+p {
+  font-size: 1.3em;
+  line-height: 1.5em;
+    color: $purple;
+  margin-bottom: 20px;
+    margin-top: 15px;
+}
+ 
+section {
+  padding: 20px 0;
+}
+ 
+.artgroup {
+    @include clearfix;
+} //artgroup

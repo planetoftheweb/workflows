@@ -1,0 +1,26 @@
+// _rclick.scss
+// ==============
+.rclick {
+  .item {
+    display: block;
+    float: left;
+    img {
+      @include border-radius(none);
+    }
+  } //item
+ 
+  .preview {
+    position: relative;
+ 
+    img {
+      position: absolute;
+      z-index: 90;
+      max-width: 400px;
+      display: block;
+      border: 1px solid #FCF4DC;
+      margin: 0;
+      @include border-radius(none);
+      @include box-shadow(black 5px 5px 12px);
+    }
+  } //preview
+} //rclick

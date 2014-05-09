@@ -1,0 +1,115 @@
+// _modules.scss
+// ============
+.city {
+  @include backImage('../images/backgrounds/seattle_skyline.jpg');
+  img.logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    max-width: 450px;
+    min-width: 250px;
+  } //logo
+} //city
+ 
+.featuredartists {
+  background: $darkGreenGold;
+  border-top: 20px solid $beige;
+  border-bottom: 50px solid $green;
+ 
+  h1 {
+    font-size: 3em;
+    color: darken($green, 20%);
+    @media (max-width: 700px) {
+      font-size: 2em;
+    }
+  } //h1
+ 
+  h2 {
+    margin-top: 20px;
+    font-size: 1.8em;
+    color: darken($beige, 8%);
+    @media (max-width: 700px) {
+     display: none;
+    }
+  } //h1
+ 
+  p {
+    color: darken($green, 15%);
+  }
+ 
+ .artistlist {
+    padding-bottom: 20px;
+ 
+    h2 {
+      margin-top: 5px;
+      font-size: 1.2em;
+      color: lighten($beige, 8%);
+    } //h2
+ 
+    .item {
+      min-width: 95px;
+      color: darken($darkGreenGold, 10%);
+      width: 18%;
+      float: left;
+      padding: 1%;
+      text-align: center;
+      position: relative;
+ 
+      >img {
+        max-width: 130px;
+        margin: 0 auto;
+        display: block;
+        @include border-radius(50%);
+        width: 100%;
+      } //img
+    } //item
+  } //artistlist
+} //featured artists
+ 
+.potterypix {
+  @include backImage('../images/backgrounds/pottery_workshop.jpg');
+  border-bottom: 50px solid $darkGreenGold;
+} //venue
+ 
+.aboutvenue {
+  img {
+    float: right;    
+  }
+}
+ 
+.workshoppix {
+  @include backImage('../images/backgrounds/woodworking_workshop.jpg');
+  border-bottom: 50px solid $darkGreenGold;
+} //workshops
+ 
+.ontour {
+  h1 {
+    color: lighten($purple, 5);
+    font-size: 3em;
+    bottom: 10px;
+    right: 10%;
+  }
+ 
+  h2 {
+    font-size: 1.8em;
+    color: $darkGreenGold;
+    border-top: 1px solid $darkGreenGold;
+    padding-top: 5px;
+  } //h3
+ 
+  h3 {
+    font-size: 1.3em;
+    color: lighten($purple, 15);
+    padding-bottom: 5px;
+  } //h4
+ 
+  img {
+    float: right;
+    @include border-radius(50%);
+    padding-left: 20px;
+    width:20%;
+    min-width: 120px;
+    max-width: 160px;
+  } //img
+} //ontour

@@ -1,0 +1,34 @@
+// _mixins
+// ========
+@mixin backImage($image) {
+  background: url($image) no-repeat 50% 20% ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+ 
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+ 
+  @media (min-width: 801px) {
+   height: 350px;
+  }
+ 
+  @media (max-width: 800px) {
+   height: 150px;
+  }
+ 
+  @media (max-width: 300px) {
+   height: 100px;
+  }
+}
+ 
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
