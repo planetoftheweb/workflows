@@ -6,5 +6,9 @@
     "type": "git",
     "url": "?.git"
   },
-  "author": "Ray Villalobos"
+  "author": "Ray Villalobos",
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-util": "^2.2.14"
+  }
 }
